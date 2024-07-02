@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to left,lightgreen,skyblue);
+}
+.container{
+    position: relative;
+    top: 100px;
+    left: 10%;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,200px);
+    border: 2px solid ;
+    gap:5%;
+    align-content: space-around;
+    justify-content: space-between;
+    background: linear-gradient(to right,rgb(240, 240, 139),rgb(147, 246, 246));
+    padding: 30px;
+}
+.box{
+    border: 2px solid;
+}
+#main{
+    grid-column: 2/4;
+    font-size: xx-large;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    font-size: x-large;
+    filter: drop-shadow(5px 5px 5px);
+}
+#dis1:hover ~ #main{
+    display: block;
+    color: white;
+    background: url(cat.jpeg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 2/4;
+    transition: all 1s ease;
+}
+#dis2:hover ~ #main{
+    display: block;
+    color:brown;
+    background: url(dog.jpeg);
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease;
+}
+#dis3:hover ~ #main{
+    color: #fff;
+    display: block;
+    background: url(snake.jpeg);
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease;
+}
+#dis4:hover ~ #main{
+    color: black;
+    display: block;
+    background: url(panda.png);
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease;
+}
+
+
+
